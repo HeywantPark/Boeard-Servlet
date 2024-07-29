@@ -7,7 +7,7 @@
 <body>
     <%@ include file="header.jsp"%>
     <h1>로그인</h1>
-    <form method="get" action="login">
+    <form method="post" action="login">
         <label for="username">아이디 : </label>
         <input type="text" id="username" name="username" required />
         <br />
