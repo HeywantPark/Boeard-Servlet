@@ -62,7 +62,9 @@ public class LoginServlet extends HttpServlet {
             e.printStackTrace();
         }
         if (isLoginSuccess) {
-            request.setAttribute("username", username);
+            HttpSession session = request.getSession();
+            session.setAttribute("username", username);
+
             RequestDispatcher rd = request.getRequestDispatcher("welcome.jsp");
             rd.forward(request, response);
         } else {
