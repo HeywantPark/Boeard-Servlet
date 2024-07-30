@@ -17,6 +17,10 @@ public class LoginServlet extends HttpServlet {
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "1234";
 
+    @Override
+    public void init() throws ServletException {
+        System.out.println("###login servlet init 메서드 호출###");
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -57,5 +61,10 @@ public class LoginServlet extends HttpServlet {
         } else {
             response.sendRedirect("loginFailed.jsp");
         }
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("###login servlet destroy 메서드 호출###");
     }
 }
