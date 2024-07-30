@@ -19,7 +19,7 @@ public class BoardServlet extends HttpServlet {
     private static Connection con;
 
     @Override
-    public void init() {
+    public void init() throws ServletException{
         System.out.println("### board servlet init 메서드 호출, 서블릿 초기화 ###");
 
         try {
