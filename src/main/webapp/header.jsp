@@ -6,4 +6,5 @@
     <a href="board">BOARD</a>
     <a href="setCookie">COOKIE</a>
     <a href="scope">SCOPE</a>
+    <a href="ex1">EX1</a>
 </header>
