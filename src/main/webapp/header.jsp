@@ -5,4 +5,5 @@
     <a href="login">LOGIN</a>
     <a href="board">BOARD</a>
     <a href="setCookie">COOKIE</a>
+    <a href="scope">SCOPE</a>
 </header>
